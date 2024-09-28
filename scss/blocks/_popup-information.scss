@@ -1,0 +1,90 @@
+.information-experience,
+.informations-education,
+.information-awards {
+  overflow: hidden;
+  position: relative;
+}
+
+.popup-content {
+  height: 354px;
+  overflow-y: auto;
+  padding-right: 15px;
+  scrollbar-width: thin;
+
+  display: none;
+}
+
+.popup-content.active {
+  display: block;
+}
+
+.content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.popup-content::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 10px;
+}
+
+.university,
+.courses,
+.experience,
+.awards {
+  font-family: Jost;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+
+  @include mobile() {
+    font-family: Jost;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+  }
+}
+
+.university h2,
+.courses h2,
+.experience h2,
+.awards h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 19px;
+
+  @include mobile() {
+    font-family: Jost;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+}
+
+.experience h3 + ul li::before {
+  content: "- ";
+  margin-right: 5px;
+  padding-left: 25px;
+}
+
+.awards h3 + ul li::before {
+  content: "- ";
+  margin-right: 5px;
+  padding-left: 25px;
+}
+
+.informations-education::after,
+.information-experience::after,
+.information-awards::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px; /* Высота размытия */
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 1)
+  );
+  pointer-events: none; /* Чтобы не мешать скроллингу */
+}

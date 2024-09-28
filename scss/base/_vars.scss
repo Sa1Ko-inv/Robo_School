@@ -1,0 +1,23 @@
+:root {
+  --textColor: #141024;
+  --accent: #d52027;
+
+  --bg-color: #141024;
+  --text-color: #ffffff;
+
+  --course-bg-color: #f9f9f9;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--textColor);
+}
+
+@mixin mobile() {
+  @media (max-width: 320px) {
+    @content;
+  }
+}

@@ -1,0 +1,33 @@
+.header {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  background-size: cover;
+  aspect-ratio: 1920/1080;
+  // overflow: hidden;
+  padding-top: 30px;
+
+  @include mobile() {
+    padding-top: 17px;
+    // height: 617px;
+    width: 320px;
+    aspect-ratio: 320/617;
+  }
+}
+
+.container {
+  max-width: 1750px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+a {
+  color: var(--text-color);
+}
+
+.header__nav {
+  margin-bottom: 266px;
+
+  @include mobile() {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,27 @@
+.definition {
+  line-height: 1.6;
+  font-family: Jost;
+  font-weight: 400;
+  font-size: 30px;
+
+  width: 891px;
+
+  @include mobile() {
+    font-family: Jost;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 1.6;
+
+    width: 300px;
+  }
+}
+
+.definition span {
+  font-family: Jost;
+  font-weight: 600;
+  font-size: 30px;
+
+  @include mobile() {
+    font-size: 20px;
+  }
+}

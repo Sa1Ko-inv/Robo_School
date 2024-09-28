@@ -1,0 +1,63 @@
+.course-outcome {
+  width: 360px;
+
+  @include mobile() {
+    width: 300px;
+  }
+}
+
+.course-outcomes-title {
+  font-family: Jost;
+  font-weight: 600;
+  font-size: 50px;
+
+  @include mobile() {
+    font-family: Jost;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.4;
+
+    width: 300px;
+    text-align: center;
+  }
+}
+
+.course-outcomes__title {
+  margin-top: 60px;
+  margin-bottom: 19px;
+
+  font-family: Jost;
+  font-weight: 600;
+  font-size: 24px;
+
+  display: inline-block;
+  position: relative;
+
+  @include mobile() {
+    display: grid;
+
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+
+    font-family: Jost;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+}
+
+.course-outcomes__grid p {
+  font-family: Jost;
+  font-weight: 400;
+  font-size: 18px;
+
+  @include mobile() {
+    font-family: Jost;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+
+    text-align: center;
+  }
+}

@@ -1,0 +1,19 @@
+.course-outcomes {
+  background-color: var(--course-bg-color);
+  padding: 100px 0 100px 381px;
+
+  @include mobile() {
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-bottom: 52px;
+  }
+}
+
+.course-outcomes__grid {
+  display: flex;
+  gap: 40px;
+
+  @include mobile() {
+    display: block;
+  }
+}

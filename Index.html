@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robo School</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div id="qwe" style="height: 0.1px; width: 0.1px; position: fixed;" class=""></div>
+    <header class="header">
+        <div class="container">
+            <div class="header__nav">
+                <nav class="nav">
+                    <a href="#!" class="logo">Robo Shool</a>
+
+                    <ul class="nav-list">
+                        <li class="nav-list__item"><a href="#school" class="nav-list__link">О школе</a></li>
+                        <li class="nav-list__item"><a href="#trainer" class="nav-list__link">Тренеры</a></li>
+                        <li class="nav-list__item"><a href="#price" class="nav-list__link">Стоимость</a></li>
+                    </ul>
+
+                    <div class="nav-number">+7 800 000 11 22</div>
+
+                    <!-- Мобильная версия навигации главной страницы -->
+                    <div class="header-mobile-nav">
+                        <a href="tel:+78000001122" class="nav-number__btn"><img src="./Img/icon/mobile-phone.svg"
+                                alt="Phone number"></a>
+                        <button id="open-mobile-nav-btn" class="nav__btn"><img src="./Img/icon/mobile-nav.svg"
+                                alt="Open naviganion"></button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+
+
+        <div class="header-img">
+            <img class="header-circle" src="/Img/header.circle.png" alt="circle">
+            <img class="header-girl" src="/Img/header.girl.png" alt="girl">
+        </div>
+
+
+        <div class="header-content">
+            <h1 class="header__title">ROBO SCHOOL</h1>
+            <p>Курсы повышения квалификации по робототехнике <br> для педагогов начальной школы
+            </p>
+            <button class="header-btn">Записаться на курс</button>
+        </div>
+
+        <!-- Мобильная навигация (окно) -->
+        <div id="mobile-nav" class="mobile-nav-wrapper">
+            <button id="close-mobile-nav-btn" class="mobile-nav-btn-close"><img class="bg-mobile-icon"
+                    src="./Img/icon/bg-mobile-icon.svg" alt="Bg-mobile-icon">
+                <img class="close-nav" src="./Img/icon/close.svg" alt="Close navigation">
+            </button>
+
+            <ul class="mobile-nav">
+                <li class="mobile-nav__item"><a href="#school" class="mobile-nav__link">О школе</a></li>
+                <li class="mobile-nav__item"><a href="#trainer" class="mobile-nav__link">Тренеры</a></li>
+                <li class="mobile-nav__item"><a href="#price" class="mobile-nav__link">Стоимость</a></li>
+            </ul>
+        </div>
+
+    </header>
+
+
+    <section id="school" class="benefits">
+        <div class="container">
+            <div class="definition">
+                <span>Robo School</span> – учреждение для формирования кадрового педагогического
+                резерва в сфере
+                робототехники и программирования
+            </div>
+            <div class="benefits__grid">
+                <div class="benefit">
+                    <div class="benefit__number">10</div>
+                    <p class="benefit__text">УМК по различным направлениям по робототехнике</p>
+                </div>
+
+                <div class="benefit">
+                    <div class="benefit__number">20</div>
+                    <p class="benefit__text">Школ, в которых запущена робототехника</p>
+                </div>
+
+                <div class="benefit">
+                    <div class="benefit__number">100</div>
+                    <p class="benefit__text">Педагогов прошедших курсы повышения квалификации</p>
+                </div>
+
+                <div class="benefit">
+                    <div class="benefit__number">10 000</div>
+                    <p class="benefit__text">Обученных детей на базе собственных центров</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="course-outcomes">
+        <div class="container">
+            <div class="course-outcomes-title">Что вы получите после курса</div>
+
+            <div class="course-outcomes__grid">
+
+
+                <div class="course-outcome">
+                    <div class="course-outcomes__certificats">
+                        <div class="course-outcomes__title">Удостоверение</div>
+                        <p>Дающее право преподавать робототехнику для детей 6-12 лет в образовательных учреждениях</p>
+                    </div>
+                </div>
+
+
+                <div class="course-outcome">
+                    <div class="course-outcomes__knowledge">
+                        <div class="course-outcomes__title">Знания</div>
+                        <p>По основам разработки учебно-методических комплексов
+                            по робототехнике и программированию</p>
+                    </div>
+                </div>
+
+
+                <div class="course-outcome">
+                    <div class="course-outcomes__practice">
+                        <div class="course-outcomes__title__practic">
+                            <span>Практику</span>
+                            <img src="./Img/icon/practic-info.svg" class="course-outcomes__information">
+                            <div class="course-outcomes__practice__informarion">При наличии свободных мест</div>
+                        </div>
+
+                        <p>Возможность пройти практику по преподаванию робототехники на базе R:ED LAB (в оффлайн или
+                            онлайн
+                            формате)</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="trainer" class="trainer">
+        <div class="container">
+            <div class="trainer__title">Профессиональные тренеры</div>
+
+            <div class="slider">
+
+                <div class="swiper">
+
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="./Img/Irina.png" alt="Ирина Лайм">
+                            <h2>Ирина Лайм</h2>
+                            <p>преподаватель по робототехнике</p>
+                            <a href="#popup1" class="swiper__link">Подробнее</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./Img/Marina.png" alt="Марина Орлова">
+                            <h2>Марина Орлова</h2>
+                            <p>преподаватель по робототехнике</p>
+                            <a href="#popup2" class="swiper__link">Подробнее</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./Img/Maxim.png" alt="Максим Петров">
+                            <h2>Максим Петров</h2>
+                            <p>преподаватель по программированию</p>
+                            <a href="#popup3" class="swiper__link">Подробнее</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./Img/Kostya.png" alt="Константин Назаров">
+                            <h2>Константин Назаров</h2>
+                            <p>преподаватель по робототехнике</p>
+                            <a href="#popup4" class="swiper__link">Подробнее</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./Img/Liza.png" alt="Лиза Весенняя">
+                            <h2>Лиза Весенняя</h2>
+                            <p>преподаватель по программированию</p>
+                            <a href="#popup5" class="swiper__link">Подробнее</a>
+                        </div>
+                    </div>
+
+                    <div class="buttons-container">
+                        <button id="sliderPrev" class="course-button-prev"><img src="./Img/icon/carusel-button-prev.png"
+                                alt="button-prev"></button>
+                        <button id="sliderNext" class="course-button-next"><img src="./Img/icon/carusel-button-next.png"
+                                alt="button-next"></button>
+                    </div>
+
+                    <div class="scrollbar">
+                        <div class="swiper-scrollbar" style="left: 0; width: 360px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+    <section id="price" class="package">
+        <div class="container">
+            <div class="package__title">Выберите нужный пакет</div>
+            <div class="package__grid">
+                <div class="package__pro">
+                    <h1>-PRO-</h1>
+                    <div class="price">20.000 ₽</div>
+                    <p>УМК по робототетхнике и программированию</p>
+                    <button class="record">Оставить заявку</button>
+                </div>
+                <div class="package__robo">
+                    <h1>-ROBO-</h1>
+                    <div class="price">15.000 ₽</div>
+                    <p>УМК по робототетхнике</p>
+                    <button class="record">Оставить заявку</button>
+                </div>
+                <div class="package__prog">
+                    <h1>-PROG-</h1>
+                    <div class="price">10.000 ₽</div>
+                    <p>УМК по программированию</p>
+                    <button class="record">Оставить заявку</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="recording">
+        <div class="container">
+            <div class="discount-and-form">
+                <div class="discount"> <!--Акции-->
+                    <h3 class="discount__title">Запишитесь на курс <br> со скидкой 10%</h3>
+                    <p>Акция действительна до 10 марта 2022 года</p>
+                </div>
+
+                <form action="" class="recording__form">
+                    <input placeholder="Имя" type="text" class="input-name">
+                    <input placeholder="Телефон" type="text" class="input-number">
+                    <input placeholder="E-mail" type="text" class="input-Email">
+                    <button class="recording-form-btn">Оформить заявку</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer-left">
+                    <div class="footer__title">ROBO.SCHOOL</div>
+                    <div class="footer__robo-school">© ROBO.SCHOOL</div>
+                </div>
+                <div class="footer__number">+7 800 000 11 22</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Модельное окно -->
+    <div id="popup1" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <header class="popup-header">
+                    <div class="trainer__photo">
+                        <img src="./Img/Irina.png" alt="Irrina_popup">
+                    </div>
+                    <div class="trainer-information">
+                        <div class="trainer__name">Ирина Лайм</div>
+                        <div class="speciality">преподаватель по робототехнике</div>
+                        <div class="networks">
+                            <a href="https://ru-ru.facebook.com/login/?next=https%3A%2F%2Fru-ru.facebook.com%2F"
+                                target="_blank" class="facebook"><img src="./Img/icon/facebook.png" alt="facebook"></a>
+                            <a href="https://www.instagram.com" target="_blank" class="instagram"><img
+                                    src="./Img/icon/Instagram.png" alt="instagram"></a>
+                        </div>
+                    </div>
+                    <a href="#qwe" class="popup__close">Закрыть</a>
+                    <a href="#qwe" class="mobile-popup__close">
+                        <img class="mobile-popup-close-1" src="./Img/icon/mobile-popup-close-1.svg" alt="">
+                        <img class="mobile-popup-close-2" src="./Img/icon/mobile-popup-close-2.svg" alt="">
+                    </a>
+                </header>
+
+                <div class="popup-tab">
+                    <button class="popup-tab__btn popup-tab__btn--active">Образование</button>
+                    <button class="popup-tab__btn">Опыт работы</button>
+                    <button class="popup-tab__btn">Награды</button>
+                </div>
+
+                <select class="select" onchange="changeTab(this.value, 'popup1')">
+                    <option value=".informations-education">Образование</option>
+                    <option value=".information-experience">Опыт работы</option>
+                    <option value=".information-awards">Награды</option>
+                </select>
+                <img class="select-arrow" src="./Img/icon/arrow-down.svg" alt="">
+
+
+
+                <div class="informations-education popup-content" style="display: block;">
+
+                    <div class="university">
+                        <h2>Университет</h2>
+                        <p>Сентябрь 2008 — Июнь 2012</p>
+                        <p>Учебное заведение: Московский государственный технический университет имени Н. Э. Баумана
+                        </p>
+                        <p>Факультет: Факультет робототехники и комплексной автоматизации</p>
+                        <p>Бакалавр техники и технологий по направлению «Робототехника и автоматизация»</p>
+                        <p style="margin-bottom: 25px;">Форма обучения: Очная</p>
+                    </div>
+
+                    <div class="courses">
+                        <h2>Курсы и тренинги</h2>
+                        <p>Сентябрь 2021 — Декабрь 2021</p>
+                        <p>Факультет информационных технологий и робототехники</p>
+                        <p style="margin-bottom: 15px;">Место проведения: Университет ИТМО
+                        </p>
+
+                        <p>Январь 2022 — Апрель 2022</p>
+                        <p>Курс «Программирование на Python для робототехники»</p>
+                        <p>Факультет: Центр дистанционного обучения</p>
+                        <p style="margin-bottom: 15px;">Место проведения: Учебный центр «Технопарк»</p>
+
+                        <p>Сентябрь 2022 — Ноябрь 2022</p>
+                        <p>Интенсив «Разработка и управление дронами»</p>
+                        <p>Факультет: Центр робототехники и автоматики</p>
+                        <p>Место проведения: Центр робототехники и автоматики «РобоМир»</p>
+                    </div>
+
+                </div>
+
+                <div class="information-experience popup-content" style="display: none">
+
+                    <div class="experience">
+                        <h2>Май 2019 — Настоящее время</h2>
+                        <p>Старший преподаватель робототехники</p>
+                        <p style="margin-bottom: 10px;">Место работы: Московский государственный технический
+                            университет имени Н. Э. Баумана</p>
+                        <h3>Основные обязанности:</h3>
+                        <ul style="margin-bottom: 25px;">
+                            <li>Разработка учебных планов и программ по робототехнике для бакалавриата и
+                                магистратуры.
+                            </li>
+                            <li>Проведение лекций и лабораторных занятий по робототехнике и автоматизации.</li>
+                            <li>Руководство студенческими проектами и дипломными работами.</li>
+                            <li>Организация и проведение научных конференций и семинаров по робототехнике.</li>
+                        </ul>
+
+                        <h2>Февраль 2017 — Апрель 2019</h2>
+                        <p>Ведущий инженер-исследователь</p>
+                        <p style="margin-bottom: 10px;">Место работы: Лаборатория робототехники и интеллектуальных
+                            систем, Сколковский институт науки и технологий</p>
+                        <h3>Основные обязанности:</h3>
+                        <ul style="margin-bottom: 25px;">
+                            <li>Разработка и внедрение инновационных решений в области робототехники и
+                                искусственного интеллекта.
+                            </li>
+                            <li>Ведение научных исследований и публикация результатов в международных журналах.</li>
+                            <li>Координация работы команды инженеров и исследователей.</li>
+                            <li>Представление проектов на международных выставках и конференциях.</li>
+                        </ul>
+
+                        <h2>Сентябрь 2014 — Январь 2017</h2>
+                        <p>Преподаватель робототехники и автоматики</p>
+                        <p style="margin-bottom: 10px;">Место работы: Санкт-Петербургский политехнический
+                            университет Петра Великого</p>
+                        <h3>Основные обязанности:</h3>
+                        <ul style="margin-bottom: 25px;">
+                            <li>Преподавание курсов по робототехнике и автоматике для студентов технических
+                                специальностей.
+                            </li>
+                            <li>Руководство лабораторными работами и курсовыми проектами студентов.</li>
+                            <li>Разработка учебных материалов и методических пособий.</li>
+                            <li>Участие в разработке новых лабораторных установок и учебных стендов.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="information-awards popup-content" style="display: none">
+
+                    <div class="awards">
+                        <h2>Декабрь 2023</h2>
+                        <p>Премия «Лучший преподаватель робототехники года»</p>
+                        <p style="margin-bottom: 10px;">Организация: Министерство образования и науки Российской
+                            Федерации</p>
+                        <h3>Описание:</h3>
+                        <ul style="margin-bottom: 25px;">
+                            <li>Награда за выдающиеся достижения в области преподавания робототехники и вклад в
+                                развитие технического образования.
+                            </li>
+                        </ul>
+
+                        <h2>Ноябрь 2023</h2>
+                        <p>Международная премия в области образовательных технологий</p>
+                        <p style="margin-bottom: 10px;">Организация: UNESCO</p>
+                        <h3>Описание:</h3>
+                        <ul style="margin-bottom: 25px;">
+                            <li>Признание за внедрение инновационных методик в преподавание робототехники и
+                                значительный вклад в международное сотрудничество в области технического
+                                образования.</li>
+                        </ul>
+
+                        <h2>Июнь 2022</h2>
+                        <p>Премия «За заслуги в научной деятельности»</p>
+                        <p style="margin-bottom: 10px;">Организация: Российская академия наук</p>
+                        <h3>Описание:</h3>
+                        <ul style="margin-bottom: 25px;">
+                            <li>Награда за выдающиеся научные исследования в области робототехники, публикации в
+                                ведущих научных журналах и участие в международных конференциях.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модельное окно -->
+    <div id="popup2" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <header class="popup-header">
+                    <div class="trainer__photo">
+                        <img src="./Img/Marina.png" alt="Marina_popup">
+                    </div>
+                    <div class="trainer-information">
+                        <div class="trainer__name">Марина Орлова</div>
+                        <div class="speciality">преподаватель по робототехнике</div>
+                        <div class="networks">
+                            <a href="https://ru-ru.facebook.com/login/?next=https%3A%2F%2Fru-ru.facebook.com%2F"
+                                target="_blank" class="facebook"><img src="./Img/icon/facebook.png" alt="facebook"></a>
+                            <a href="https://www.instagram.com" target="_blank" class="instagram"><img
+                                    src="./Img/icon/Instagram.png" alt="instagram"></a>
+                        </div>
+                    </div>
+                    <a href="#qwe" class="popup__close">Закрыть</a>
+                    <a href="#qwe" class="mobile-popup__close">
+                        <img class="mobile-popup-close-1" src="./Img/icon/mobile-popup-close-1.svg" alt="">
+                        <img class="mobile-popup-close-2" src="./Img/icon/mobile-popup-close-2.svg" alt="">
+                    </a>
+                </header>
+
+                <div class="popup-tab">
+                    <button class="popup-tab__btn popup-tab__btn--active">Образование</button>
+                    <button class="popup-tab__btn">Опыт работы</button>
+                    <button class="popup-tab__btn">Награды</button>
+                </div>
+
+                <select class="select" onchange="changeTab(this.value, 'popup2')">
+                    <option value=".informations-education">Образование</option>
+                    <option value=".information-experience">Опыт работы</option>
+                    <option value=".information-awards">Награды</option>
+                </select>
+                <img class="select-arrow" src="./Img/icon/arrow-down.svg" alt="">
+
+
+                <div class="informations-education popup-content" style="display: block;">
+
+                    <div class="university">
+                        <h2>Университет</h2>
+                        <p>Сентябрь 1995 — Июнь 2000</p>
+                        <p>Санкт-Петербургский политехнический университет Петра Великого</p>
+                        <p>Факультет: Компьютерных наук и технологий</p>
+                        <p>Специальность: Математика и компьютерные науки</p>
+                        <p style="margin-bottom: 25px;">Форма обучения: Очная</p>
+                    </div>
+
+                    <div class="courses">
+                        <h2>Курсы и тренинги</h2>
+                        <p>Ноябрь 2020 — Февраль 2021</p>
+                        <p>Программа дополнительного образования «3D Моделирование»</p>
+                        <p style="margin-bottom: 15px;">Место проведения: Институт дополнительного образования
+                            «Политех»
+                        </p>
+
+                        <p>Сентябрь 2021 — Декабрь 2021</p>
+                        <p>Программа повышения квалификации «Современные методы и технологии в робототехнике»</p>
+                        <p style="margin-bottom: 15px;">Место проведения: Университет ИТМО</p>
+
+                        <p>Январь 2022 — Апрель 2022</p>
+                        <p>Курс «Программирование на Python для робототехники»</p>
+                        <p>Место проведения: Учебный центр «Технопарк»</p>
+                    </div>
+
+                </div>
+
+                <div class="information-experience popup-content" style="display: none">
+
+                    <div class="experience">
+                        <h2>Март 2018 — Настоящее время</h2>
+                        <p>Преподаватель робототехники</p>
+                        <p style="margin-bottom: 10px;">Место работы: Технический лицей №12</p>
+                        <h3>Основные обязанности:</h3>
+                        <ul style="margin-bottom: 25px;">
+                            <li>Разработка и проведение курсов по робототехнике для учащихся средней и старшей
+                                школы.
+                            </li>
+                            <li>Руководство школьной робототехнической командой, участие в региональных и
+                                национальных
+                                соревнованиях.</li>
+                            <li>Проведение мастер-классов и семинаров по основам робототехники.</li>
+                        </ul>
+
+                        <h2>Июнь 2016 — Февраль 2018</h2>
+                        <p>Инженер-конструктор робототехнических систем</p>
+                        <p style="margin-bottom: 10px;">Место работы: НИИ робототехники и автоматизации</p>
+                        <h3>Основные обязанности:</h3>
+                        <ul style="margin-bottom: 25px;">
+                            <li>Разработка и прототипирование робототехнических устройств.
+                            </li>
+                            <li>Проведение тестирования и отладки робототехнических систем.</li>
+                            <li>Подготовка технической документации и отчетов по проектам.</li>
+                        </ul>
+
+                        <h2>Апрель 2014 — Май 2016</h2>
+                        <p>Ассистент преподавателя по робототехнике</p>
+                        <p style="margin-bottom: 10px;">Место работы: Государственный университет имени М.В.
+                            Ломоносова</p>
+                        <h3>Основные обязанности:</h3>
+                        <ul style="margin-bottom: 25px;">
+                            <li>Помощь в подготовке и проведении лекций и лабораторных занятий по робототехнике.
+                            </li>
+                            <li>Консультирование студентов по курсовым проектам и лабораторным работам.</li>
+                            <li>Участие в организации и проведении научных конференций и конкурсов.</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="information-awards popup-content" style="display: none">
+
+                    <div class="awards">
+                        <h2>Декабрь 2023</h2>
+                        <p>Премия «Лучший преподаватель робототехники года»</p>
+                        <p style="margin-bottom: 10px;">Организация: Министерство образования и науки Российской
+                            Федерации</p>
+                        <h3>Описание:</h3>
+                        <ul style="margin-bottom: 25px;">
+                            <li>Награда за выдающиеся достижения в области преподавания робототехники и вклад в
+                                развитие технического образования.
+                            </li>
+                        </ul>
+
+                        <h2>Май 2022</h2>
+                        <p>Золотая медаль на Национальной олимпиаде по робототехнике</p>
+                        <p style="margin-bottom: 10px;">Организация: Российская ассоциация робототехники</p>
+                        <h3>Описание:</h3>
+                        <ul style="margin-bottom: 25px;">
+                            <li>Руководство командой студентов, которая заняла первое место в соревнованиях по
+                                созданию автономных роботов.</li>
+                        </ul>
+
+                        <h2>Октябрь 2021</h2>
+                        <p>Премия «Инновационный преподаватель»</p>
+                        <p style="margin-bottom: 10px;">Организация: Фонд поддержки инновационного образования</p>
+                        <h3>Описание:</h3>
+                        <ul style="margin-bottom: 25px;">
+                            <li>ППризнание за внедрение передовых технологий и методов в образовательный процесс,
+                                разработку уникальных учебных программ по робототехнике.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модельное окно -->
+    <div id="popup3" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <header class="popup-header">
+                    <div class="trainer__photo">
+                        <img src="./Img/Maxim.png" alt="Maxim_popup">
+                    </div>
+                    <div class="trainer-information">
+                        <div class="trainer__name">Максим Петров</div>
+                        <div class="speciality">преподаватель по программированию</div>
+                        <div class="networks">
+                            <a href="https://ru-ru.facebook.com/login/?next=https%3A%2F%2Fru-ru.facebook.com%2F"
+                                target="_blank" class="facebook"><img src="./Img/icon/facebook.png" alt="facebook"></a>
+                            <a href="https://www.instagram.com" target="_blank" class="instagram"><img
+                                    src="./Img/icon/Instagram.png" alt="instagram"></a>
+                        </div>
+                    </div>
+                    <a href="#qwe" class="popup__close">Закрыть</a>
+                    <a href="#qwe" class="mobile-popup__close">
+                        <img class="mobile-popup-close-1" src="./Img/icon/mobile-popup-close-1.svg" alt="">
+                        <img class="mobile-popup-close-2" src="./Img/icon/mobile-popup-close-2.svg" alt="">
+                    </a>
+                </header>
+
+                <div class="popup-tab">
+                    <button class="popup-tab__btn popup-tab__btn--active">Образование</button>
+                    <button class="popup-tab__btn">Опыт работы</button>
+                    <button class="popup-tab__btn">Награды</button>
+                </div>
+
+                <select class="select" onchange="changeTab(this.value, 'popup3')">
+                    <option value=".informations-education">Образование</option>
+                    <option value=".information-experience">Опыт работы</option>
+                    <option value=".information-awards">Награды</option>
+                </select>
+                <img class="select-arrow1" src="./Img/icon/arrow-down.svg" alt="">
+
+
+                <div class="informations-education popup-content" style="display: block;">
+
+                    <div class="university">
+                        <h2>Университет</h2>
+                        <p>Сентябрь 2010 — Июнь 2015</p>
+                        <p>Учебное заведение: Московский государственный университет
+                        </p>
+                        <p>Факультет: Факультет робототехники и комплексной автоматизации</p>
+                        <p>Степень бакалавра в области компьютерных наук</p>
+                        <p style="margin-bottom: 25px;">Форма обучения: Очная</p>
+                    </div>
+
+                    <div class="courses">
+                        <h2>Курсы и тренинги</h2>
+                        <p>Сентябрь 2016 — Декабрь 2016</p>
+                        <p>Семинар по использованию библиотеки OpenCV для обработки изображений в робототехнике</p>
+                        <p style="margin-bottom: 15px;">Место проведения: Исследовательский центр робототехники
+                        </p>
+
+                        <p>Январь 2019 — Апрель 2019</p>
+                        <p>Тренинг по разработке робототехнических систем на платформе ROS</p>
+                        <p style="margin-bottom: 15px;">Место проведения: Московский центр робототехники</p>
+
+                        <p>Сентябрь 2020 — Ноябрь 2020</p>
+                        <p>Курс по программированию робототехнических систем на платформе C++</p>
+                        <p>Факультет: Центр робототехники и автоматики</p>
+                        <p>Место проведения: Московский центр робототехники.</p>
+                    </div>
+
+                </div>
+
+                <div class="information-experience popup-content" style="display: none">
+
+                    <div class="experience">
+                        <h2>Май 2018 - настоящее время</h2>
+                        <p>Старший преподаватель робототехники</p>
+                        <p style="margin-bottom: 10px;">Место работы: Московский центр робототехники</p>
+                        <h3>Основные обязанности:</h3>
+                        <ul style="margin-bottom: 25px;">
+                            <li>Преподает курсы и тренинги по программированию робототехнических систем на языках
+                                Python, C++ и Java</li>
+                            <li>Разрабатывает учебные материалы и учебные планы для курсов по робототехнике</li>
+                            <li>Проводит индивидуальные и групповые занятия, используя интерактивные методы обучения
+                            </li>
+                            <li>Консультирует студентов по вопросам программирования и практической работы с
+                                роботами</li>
+                        </ul>
+
+                        <h2>Февраль 2017 — Апрель 2018</h2>
+                        <p>Ведущий инженер-исследователь</p>
+                        <p style="margin-bottom: 10px;">Место работы: Робототехническая компания "Альфа"</p>
+                        <h3>Основные обязанности:</h3>
+                        <ul style="margin-bottom: 25px;">
+                            <li>Работал инженером-программистом, разрабатывая программное обеспечение для
+                                робототехнических систем
+                            </li>
+                            <li>Участвовал в проектировании и тестировании новых робототехнических решений</li>
+                            <li>Взаимодействовал с командой разработчиков, инженеров и менеджеров проектов</li>
+                        </ul>
+
+                        <h2>Сентябрь 2016 - Сентябрь 2016</h2>
+                        <p>Преподаватель робототехники и автоматики</p>
+                        <p style="margin-bottom: 10px;">Место работы: Исследовательский центр робототехники</p>
+                        <h3>Основные обязанности:</h3>
+                        <ul style="margin-bottom: 25px;">
+                            <li>Проходил стажировку в качестве разработчика, участвуя в исследовательских проектах в
+                                области робототехники
+                            </li>
+                            <li>Изучал и применял различные библиотеки и фреймворки для программирования
+                                робототехнических систем</li>
+                            <li>Представлял результаты своих исследований на внутренних семинарах центра</li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="information-awards popup-content" style="display: none">
+
+                    <div class="awards">
+                        <h2>2018 г.</h2>
+                        <p>Грант на разработку учебных материалов по робототехнике</p>
+                        <p style="margin-bottom: 10px;">Организация: Министерство образования и науки Российской
+                            Федерации</p>
+                        <h3>Описание:</h3>
+                        <ul style="margin-bottom: 25px;">
+                            <li>Преподаватель получил грант на разработку и публикацию учебных пособий и
+                                методических материалов для преподавания программирования в робототехнике.
+                            </li>
+                        </ul>
+
+                        <h2>2019 г.</h2>
+                        <p>Сертификат "Эксперт в области программирования робототехнических систем"</p>
+                        <p style="margin-bottom: 10px;"> Ассоциация инженеров-программистов</p>
+                        <h3>Описание:</h3>
+                        <ul style="margin-bottom: 25px;">
+                            <li>Данный сертификат подтверждает высокую квалификацию преподавателя в области
+                                программирования робототехнических систем и его экспертные знания в этой области.
+                            </li>
+                        </ul>
+
+                        <h2>2020 г.</h2>
+                        <p>Победитель конкурса инновационных проектов в робототехнике,</p>
+                        <p style="margin-bottom: 10px;">Организация: Российская ассоциация робототехники</p>
+                        <h3>Описание:</h3>
+                        <ul style="margin-bottom: 25px;">
+                            <li>Преподаватель получил эту награду за разработку и внедрение нового учебного курса по
+                                программированию автономных робототехнических систем с использованием технологий
+                                машинного обучения.</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модельное окно -->
+    <div id="popup4" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <header class="popup-header">
+                    <div class="trainer__photo">
+                        <img src="./Img/Kostya.png" alt="Kostya_popup">
+                    </div>
+                    <div class="trainer-information">
+                        <div class="trainer__name">Константин Назаров</div>
+                        <div class="speciality">преподаватель по робототетхнике</div>
+                        <div class="networks">
+                            <a href="https://ru-ru.facebook.com/login/?next=https%3A%2F%2Fru-ru.facebook.com%2F"
+                                target="_blank" class="facebook"><img src="./Img/icon/facebook.png" alt="facebook"></a>
+                            <a href="https://www.instagram.com" target="_blank" class="instagram"><img
+                                    src="./Img/icon/Instagram.png" alt="instagram"></a>
+                        </div>
+                    </div>
+                    <a href="#qwe" class="popup__close">Закрыть</a>
+                    <a href="#qwe" class="mobile-popup__close">
+                        <img class="mobile-popup-close-1" src="./Img/icon/mobile-popup-close-1.svg" alt="">
+                        <img class="mobile-popup-close-2" src="./Img/icon/mobile-popup-close-2.svg" alt="">
+                    </a>
+                </header>
+
+                <div class="popup-tab">
+                    <button class="popup-tab__btn popup-tab__btn--active">Образование</button>
+                    <button class="popup-tab__btn">Опыт работы</button>
+                    <button class="popup-tab__btn">Награды</button>
+                </div>
+
+                <select class="select" onchange="changeTab(this.value, 'popup4')">
+                    <option value=".informations-education">Образование</option>
+                    <option value=".information-experience">Опыт работы</option>
+                    <option value=".information-awards">Награды</option>
+                </select>
+                <img class="select-arrow" src="./Img/icon/arrow-down.svg" alt="">
+
+
+                <div class="informations-education popup-content" style="display: block;">
+                    <div class="university">
+                        <h2>Университет</h2>
+                        <p>Сентябрь 2007 — Июнь 2011</p>
+                        <p>Бакалавр техники и технологий по направлению «Робототехника и интеллектуальные системы»
+                        <p>Факультет: Факультет автоматизации и вычислительной техники</p>
+                        <p>Учебное заведение: Новосибирский государственный технический университет
+                        </p>
+                        </p>
+                        <p style="margin-bottom: 15px;">Форма обучения: Очная</p>
+
+                        <p>Сентябрь 2014 — Июнь 2017</p>
+                        <p>Аспирантура по направлению «Робототехника и автоматизированные системы управления»</p>
+                        <p>Факультет: Факультет информационных технологий и робототехники</p>
+                        <p>Учебное заведение: Казанский (Приволжский) федеральный университет</p>
+                        <p style="margin-bottom: 25px;">Форма обучения: Очная
+                        </p>
+                    </div>
+
+                    <div class="courses">
+                        <h2>Курсы и тренинги</h2>
+                        <p>Январь 2019 — Апрель 2019</p>
+                        <p>Тренинг по разработке робототехнических систем на платформе ROS</p>
+                        <p>Место проведения: Московский центр робототехники</p>
+                    </div>
+                </div>
+
+                <div class="information-experience popup-content" style="display: none">
+                    <div class="experience">
+                        <h2>Сентябрь 2018 — Настоящее время</h2>
+                        <p>Старший преподаватель робототехники</p>
+                        <p style="margin-bottom: 10px;">Место работы: Национальный исследовательский технологический
+                            университет «МИСиС»</p>
+                        <h3>Основные обязанности:</h3>
+                        <ul style="margin-bottom: 25px;">
+                            <li>Разработка и проведение курсов по робототехнике для студентов бакалавриата и
+                                магистратуры.</li>
+                            <li>Руководство студенческими научно-исследовательскими проектами.</li>
+                            <li>Организация и проведение семинаров и мастер-классов по робототехнике.
+                            </li>
+                            <li>Участие в международных образовательных и научных программах.</li>
+                        </ul>
+
+                        <h2>Апрель 2016 — Август 2018</h2>
+                        <p>Инженер-исследователь в области робототехники</p>
+                        <p style="margin-bottom: 10px;">Место работы: Институт проблем управления имени В.А.
+                            Трапезникова РАН</p>
+                        <h3>Основные обязанности:</h3>
+                        <ul style="margin-bottom: 25px;">
+                            <li>Проведение научных исследований в области автономных робототехнических систем.
+                            </li>
+                            <li>Разработка прототипов роботов и их тестирование.</li>
+                            <li>Подготовка научных публикаций и отчетов.</li>
+                            <li>Участие в международных научных конференциях и симпозиумах.</li>
+                        </ul>
+
+                        <h2>Сентябрь 2013 — Март 2016</h2>
+                        <p>Ассистент преподавателя по робототехнике</p>
+                        <p style="margin-bottom: 10px;">Место работы: Пермский национальный исследовательский
+                            политехнический университет</p>
+                        <h3>Основные обязанности:</h3>
+                        <ul style="margin-bottom: 25px;">
+                            <li>Помощь в подготовке и проведении лекций и лабораторных занятий по робототехнике.
+                            </li>
+                            <li>Консультирование студентов по курсовым проектам и лабораторным работам.</li>
+                            <li>Участие в разработке учебных программ и методических материалов.</li>
+                            <li>Организация студенческих научных мероприятий и конкурсов.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="information-awards popup-content" style="display: none">
+                    <div class="awards">
+                        <h2>2018 г.</h2>
+                        <p>Грант на разработку учебных материалов по робототехнике</p>
+                        <p style="margin-bottom: 10px;">Организация: Министерство образования и науки Российской
+                            Федерации</p>
+                        <h3>Описание:</h3>
+                        <ul style="margin-bottom: 25px;">
+                            <li>Преподаватель получил грант на разработку и публикацию учебных пособий и
+                                методических материалов для преподавания программирования в робототехнике.
+                            </li>
+                        </ul>
+
+                        <h2>Октябрь 2023</h2>
+                        <p>Премия за выдающиеся достижения в области образования</p>
+                        <p style="margin-bottom: 10px;">Организация: Российский союз ректоров</p>
+                        <h3>Описание:</h3>
+                        <ul style="margin-bottom: 25px;">
+                            <li>Признание за внедрение инновационных образовательных программ по робототехнике и
+                                значительный вклад в подготовку квалифицированных специалистов.
+                            </li>
+                        </ul>
+
+                        <h2>Март 2022</h2>
+                        <p>Награда за лучший научный доклад на международной конференции по робототехнике</p>
+                        <p style="margin-bottom: 10px;">Организация: IEEE Robotics and Automation Society</p>
+                        <h3>Описание:</h3>
+                        <ul style="margin-bottom: 25px;">
+                            <li>Признание за исследовательскую работу в области робототехники, представленную на
+                                международной конференции IEEE Robotics and Automation Conference.</li>
+                        </ul>
+
+                        <h2>Июль 2021</h2>
+                        <p>Грант на проведение научных исследований в области робототехники</p>
+                        <p style="margin-bottom: 10px;">Организация: Российский фонд фундаментальных исследований
+                            (РФФИ)</p>
+                        <h3>Описание:</h3>
+                        <ul style="margin-bottom: 25px;">
+                            <li>ППоддержка перспективного проекта по разработке автономных робототехнических систем
+                                для промышленного применения.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Модельное окно -->
+    <div id="popup5" class="popup">
+        <div class="popup__body">
+            <div class="popup__content">
+                <header class="popup-header">
+                    <div class="trainer__photo">
+                        <img src="./Img/Liza.png" alt="Liza_popup">
+                    </div>
+                    <div class="trainer-information">
+                        <div class="trainer__name">Лиза Весенняя</div>
+                        <div class="speciality">преподаватель по программированию</div>
+                        <div class="networks">
+                            <a href="https://ru-ru.facebook.com/login/?next=https%3A%2F%2Fru-ru.facebook.com%2F"
+                                target="_blank" class="facebook"><img src="./Img/icon/facebook.png" alt="facebook"></a>
+                            <a href="https://www.instagram.com" target="_blank" class="instagram"><img
+                                    src="./Img/icon/Instagram.png" alt="instagram"></a>
+                        </div>
+                    </div>
+                    <a href="#qwe" class="popup__close">Закрыть</a>
+                    <a href="#qwe" class="mobile-popup__close">
+                        <img class="mobile-popup-close-1" src="./Img/icon/mobile-popup-close-1.svg" alt="">
+                        <img class="mobile-popup-close-2" src="./Img/icon/mobile-popup-close-2.svg" alt="">
+                    </a>
+                </header>
+
+                <div class="popup-tab">
+                    <button class="popup-tab__btn popup-tab__btn--active">Образование</button>
+                    <button class="popup-tab__btn">Опыт работы</button>
+                    <button class="popup-tab__btn">Награды</button>
+                </div>
+
+                <select class="select" onchange="changeTab(this.value, 'popup5')">
+                    <option value=".informations-education">Образование</option>
+                    <option value=".information-experience">Опыт работы</option>
+                    <option value=".information-awards">Награды</option>
+                </select>
+                <img class="select-arrow1" src="./Img/icon/arrow-down.svg" alt="">
+
+
+                <div class="informations-education popup-content" style="display: block;">
+                    <div class="university">
+                        <h2>Университет</h2>
+                        <p>Сентябрь 2008 — Июнь 2012</p>
+                        <p>Бакалавр техники и технологий по направлению «Информационные технологии и робототехника»
+                        </p>
+                        <p>Факультет: Факультет информационных технологий</p>
+                        <p>Учебное заведение: Дальневосточный федеральный университет
+                        </p>
+                        <p style="margin-bottom: 15px;">Форма обучения: Очная</p>
+
+                        <p>Сентябрь 2012 — Июнь 2014</p>
+                        <p>Магистр техники и технологий по направлению «Программирование для робототехнических
+                            систем»</p>
+                        <p>Факультет: Факультет компьютерных наук</p>
+                        <p>Учебное заведение: Томский политехнический университет
+                        </p>
+                        <p style="margin-bottom: 15px;">Форма обучения: Очная</p>
+
+                        <p>Сентябрь 2015 — Июнь 2018</p>
+                        <p>Аспирантура по направлению «Программное обеспечение для интеллектуальных систем
+                            управления роботами»</p>
+                        <p>Факультет: Факультет прикладной математики и кибернетики</p>
+                        <p>Учебное заведение: Нижегородский государственный университет имени Н.И. Лобачевского
+                        </p>
+                        <p style="margin-bottom: 25px;">Форма обучения: Очная</p>
+                    </div>
+
+                    <div class="courses">
+                        <h2>Курсы и тренинги</h2>
+                        <p>Июнь 2021 — Сентябрь 2021</p>
+                        <p>Сертификационный курс «Алгоритмы и структуры данных для робототехники»</p>
+                        <p style="margin-bottom: 15px;">Место проведения: Учебное заведение: Udacity (онлайн)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="information-experience popup-content" style="display: none">
+                    <div class="experience">
+                        <h2>Май 2018 - настоящее время</h2>
+                        <p>Преподаватель программирования для робототехники</p>
+                        <p style="margin-bottom: 10px;">Место работы: Санкт-Петербургский государственный
+                            университет</p>
+                        <h3>Основные обязанности:</h3>
+                        <ul style="margin-bottom: 25px;">
+                            <li>Разработка и проведение курсов по программированию для робототехнических систем.
+                            </li>
+                            <li>Руководство студенческими проектами и дипломными работами.</li>
+                            <li>Организация и проведение научных конференций и семинаров по программированию и
+                                робототехнике.</li>
+                            <li>Ведение лабораторных и практических занятий.</li>
+                        </ul>
+
+                        <h2>Июль 2016 — Январь 2019</h2>
+                        <p>Инженер-программист робототехнических систем</p>
+                        <p style="margin-bottom: 10px;">Место работы: Центр робототехники и искусственного
+                            интеллекта, Новосибирский государственный университет</p>
+                        <h3>Основные обязанности:</h3>
+                        <ul style="margin-bottom: 25px;">
+                            <li>Разработка программного обеспечения для робототехнических систем.</li>
+                            <li>Ведение научных исследований в области робототехники.</li>
+                            <li>Координация работы команды программистов.</li>
+                            <li>Представление проектов на международных выставках и конференциях.</li>
+                        </ul>
+
+                        <h2>Сентябрь 2014 — Июнь 2016</h2>
+                        <p>Ассистент преподавателя по программированию</p>
+                        <p style="margin-bottom: 10px;">Место работы: Уральский федеральный университет имени
+                            первого Президента России Б.Н. Ельцина</p>
+                        <h3>Основные обязанности:</h3>
+                        <ul style="margin-bottom: 25px;">
+                            <li>Помощь в подготовке и проведении лекций и лабораторных занятий по программированию.
+                            </li>
+                            <li>Консультирование студентов по курсовым проектам и лабораторным работам.</li>
+                            <li>Участие в разработке учебных программ и методических материалов.</li>
+                            <li>Организация студенческих научных мероприятий и конкурсов.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="information-awards popup-content" style="display: none">
+                    <div class="awards">
+                        <h2>Май 2023</h2>
+                        <p>Премия за инновации в области образования</p>
+                        <p style="margin-bottom: 10px;">Организация: Ассоциация преподавателей России</p>
+                        <h3>Описание:</h3>
+                        <ul style="margin-bottom: 25px;">
+                            <li>Признание за разработку и внедрение инновационных методик обучения программированию
+                                для робототехники.</li>
+                        </ul>
+
+                        <h2>Сентябрь 2022</h2>
+                        <p>Награда за выдающиеся достижения в области научных исследований</p>
+                        <p style="margin-bottom: 10px;"> Организация: Международная ассоциация инженеров и
+                            разработчиков</p>
+                        <h3>Описание:</h3>
+                        <ul style="margin-bottom: 25px;">
+                            <li>Награда за значительный вклад в исследования по программированию для
+                                робототехнических систем и публикации в международных научных журналах.</li>
+                        </ul>
+
+                        <h2>Декабрь 2021</h2>
+                        <p>Грант на проведение научных исследований в области программирования для робототехники</p>
+                        <p style="margin-bottom: 10px;">Организация: Российский научный фонд</p>
+                        <h3>Описание:</h3>
+                        <ul style="margin-bottom: 25px;">
+                            <li>Поддержка перспективного проекта по разработке алгоритмов для автономных
+                                робототехнических систем.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

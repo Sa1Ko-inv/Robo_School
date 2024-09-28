@@ -1,0 +1,35 @@
+.benefit {
+  width: 260px;
+}
+
+.benefit__number {
+  font-family: Jost;
+  font-weight: 600;
+  font-size: 70px;
+  color: var(--accent);
+
+  @include mobile() {
+    height: 72px;
+
+    font-family: Jost;
+    font-size: 60px;
+    font-weight: 600;
+
+    margin: auto;
+  }
+}
+
+.benefit__text {
+  font-family: Jost;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+
+  @include mobile() {
+    font-family: Jost;
+    font-size: 16px;
+    font-weight: 400;
+
+    padding-top: 15px;
+  }
+}

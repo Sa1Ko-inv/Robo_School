@@ -1,0 +1,23 @@
+.nav-list {
+  font-family: Jost;
+  font-size: 20px;
+  font-weight: 400;
+
+  align-self: center;
+  justify-self: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  @include mobile() {
+    display: none;
+  }
+}
+
+// .nav-list__item {
+// }
+
+// .nav-list__link {
+// }

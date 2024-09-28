@@ -1,0 +1,79 @@
+.popup-tab {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 40px;
+  padding-bottom: 19.5px;
+  border-bottom: 1px solid rgba(20, 16, 36, 0.11);
+
+  @include mobile() {
+    display: none;
+  }
+}
+
+.popup-tab__btn {
+  font-family: Jost;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  width: 113px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.popup-tab__btn--active {
+  color: var(--accent);
+  width: 120px;
+  height: 32px;
+}
+
+// Mobile tabs
+.select {
+  position: relative;
+
+  width: 260px;
+  height: 46px;
+  background-color: var(--accent);
+  color: white;
+
+  margin-top: 20px;
+  margin-bottom: 20.5px;
+
+  display: none;
+
+  text-align: center;
+
+  @include mobile() {
+    display: block;
+  }
+
+  -webkit-appearance: none;
+}
+
+.select option {
+  font-family: Jost;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+
+  background-color: #fccccc;
+}
+
+.select-arrow {
+  position: absolute;
+  color: black;
+  width: 10px;
+  height: 10px;
+
+  left: 209px;
+  top: 181px;
+}
+
+.select-arrow1 {
+  position: absolute;
+  color: black;
+  width: 10px;
+  height: 10px;
+
+  left: 209px;
+  top: 198px;
+}

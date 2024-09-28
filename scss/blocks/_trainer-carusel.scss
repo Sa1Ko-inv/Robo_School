@@ -1,0 +1,90 @@
+.slider {
+  position: relative;
+
+  max-width: calc(3 * (360px + 40px) - 40px);
+  margin-left: 0;
+
+  z-index: 0;
+}
+
+.swiper-slide {
+  margin-bottom: 77px;
+
+  @include mobile() {
+    padding-left: 10px;
+    margin-bottom: 41px;
+  }
+}
+
+.swiper-slide img {
+  margin-bottom: 20px;
+
+  @include mobile() {
+    width: 220px;
+    height: 306px;
+  }
+}
+
+.swiper-slide h2 {
+  font-family: Jost;
+  font-size: 24px;
+  font-weight: 600;
+
+  margin-bottom: 10px;
+
+  @include mobile() {
+    font-family: Jost;
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.swiper-slide p {
+  font-family: Jost;
+  font-size: 18px;
+  font-weight: 400;
+
+  margin-bottom: 20px;
+
+  @include mobile() {
+    font-family: Jost;
+    font-size: 14px;
+    font-weight: 400;
+
+    width: 180px;
+  }
+}
+
+.swiper__link {
+  color: var(--accent);
+  font-family: Jost;
+  font-size: 18px;
+  font-weight: 400;
+
+  @include mobile() {
+    font-family: Jost;
+    font-size: 16px;
+    font-weight: 400;
+  }
+}
+
+.buttons-container {
+  position: absolute;
+
+  right: 0;
+  bottom: 0;
+
+  z-index: 2;
+
+  @include mobile() {
+    display: none;
+  }
+}
+
+.scrollbar {
+  left: 0;
+  width: 360px;
+  @include mobile() {
+    display: none;
+  }
+}

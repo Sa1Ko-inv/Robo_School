@@ -1,0 +1,135 @@
+// .course-outcomes__title__practic {
+//   margin-top: 60px;
+//   margin-bottom: 19px;
+
+//   font-family: Jost;
+//   font-weight: 600;
+//   font-size: 24px;
+
+//   position: relative;
+// }
+
+// .course-outcomes__information {
+//   right: -22px;
+
+//   height: 24px;
+//   width: 24px;
+//   padding: 6px 11px;
+
+//   border-radius: 40px;
+//   background-color: rgba(20, 16, 36, 0.08);
+
+//   line-height: 25px;
+//   font-weight: 700;
+// }
+
+// .course-outcomes__practice__informarion {
+//   font-family: Jost;
+//   font-weight: 400;
+//   font-size: 16px;
+
+//   background-color: #ffffff;
+//   border-radius: 5px;
+//   box-shadow: 0px 2px 8px 0px rgba(20, 16, 36, 0.1);
+
+//   display: inline-flex;
+//   position: absolute;
+
+//   transform: translate(-10%, -120%);
+
+//   width: 251px;
+//   height: 56px;
+
+//   align-items: center;
+//   justify-content: center;
+//   display: none;
+
+//   animation: slideIn 1s forwards;
+// }
+
+// .course-outcomes__information:hover + .course-outcomes__practice__informarion {
+//   display: inline-flex;
+// }
+
+.course-outcomes__title__practic {
+  margin-top: 60px;
+
+  margin-bottom: 19px;
+  font-family: Jost;
+  font-weight: 600;
+  font-size: 24px;
+
+  position: relative;
+
+  @include mobile() {
+    font-family: Jost;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.6;
+
+    text-align: center;
+
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+.course-outcomes__information {
+  right: 9px;
+  height: 24px;
+  width: 24px;
+  padding: 6px 11px;
+  border-radius: 40px;
+  background-color: rgba(20, 16, 36, 0.08);
+  line-height: 25px;
+  font-weight: 700;
+  cursor: pointer;
+
+  position: relative;
+  z-index: 1;
+
+  @include mobile() {
+    right: 0;
+  }
+}
+
+.course-outcomes__practice__informarion {
+  font-family: Jost;
+  font-weight: 400;
+  font-size: 16px;
+
+  background-color: var(--text-color);
+  border-radius: 5px;
+  box-shadow: 0px 2px 8px 0px rgba(20, 16, 36, 0.1);
+
+  display: inline-flex;
+  position: absolute;
+
+  top: -180%;
+  left: 29%;
+  transform: translateX(-100%);
+
+  width: 251px;
+  height: 56px;
+
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+
+  @include mobile() {
+    font-family: Jost;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+
+    width: 224px;
+    height: 52px;
+    left: 15%;
+  }
+}
+
+.course-outcomes__information:hover + .course-outcomes__practice__informarion {
+  transform: translateX(0);
+  opacity: 1;
+}

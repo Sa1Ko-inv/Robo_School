@@ -1,0 +1,81 @@
+.footer {
+  height: 159px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
+  @include mobile() {
+    height: 197px;
+
+    position: relative;
+  }
+}
+
+.container {
+  padding: 0;
+}
+.footer__grid {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+
+  padding: 40px 100px;
+
+  @include mobile() {
+    padding: 0;
+
+    display: grid;
+    justify-content: center;
+  }
+}
+
+.footer__title {
+  font-family: Jost;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.6;
+
+  @include mobile() {
+    font-family: Jost;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.6;
+
+    padding-top: 40px;
+    margin-bottom: 20px;
+  }
+}
+
+.footer__robo-school {
+  opacity: 0.7;
+  font-family: Jost;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+
+  @include mobile() {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: Jost;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+
+    position: absolute;
+    bottom: 0;
+    left: 104px;
+    padding-bottom: 20px;
+  }
+}
+
+.footer__number {
+  font-family: Jost;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.6;
+
+  @include mobile() {
+    font-family: Jost;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.6;
+  }
+}

@@ -1,0 +1,68 @@
+.header-content {
+  padding-left: 380px;
+
+  @include mobile() {
+    padding-top: 57px;
+    padding-left: 0;
+  }
+}
+
+.header__title {
+  font-family: Jost;
+  font-weight: 600;
+  font-size: 70px;
+
+  margin-bottom: 20px;
+
+  @include mobile() {
+    font-family: Jost;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 160%;
+
+    text-align: center;
+
+    margin-bottom: 10px;
+  }
+}
+
+.header-content p {
+  font-family: Jost;
+  font-weight: 400;
+  font-size: 20px;
+
+  margin-bottom: 50px;
+
+  @include mobile() {
+    font-family: Jost;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 160%;
+
+    text-align: center;
+
+    margin-bottom: 271px;
+  }
+}
+
+.header-btn {
+  position: absolute;
+
+  font-family: Jost;
+  font-weight: 400;
+  font-size: 18px;
+
+  background-color: var(--accent);
+
+  width: 260px;
+  height: 79px;
+
+  z-index: 1;
+
+  @include mobile() {
+    width: 300px;
+    height: 60px;
+
+    margin-left: 10px;
+  }
+}

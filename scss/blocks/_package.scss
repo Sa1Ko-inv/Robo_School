@@ -1,0 +1,142 @@
+.package {
+  padding: 120px 0;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1160px;
+
+  @include mobile() {
+    padding: 60px 0;
+  }
+}
+
+.package__title {
+  font-family: Jost;
+  font-size: 50px;
+  font-weight: 600;
+
+  margin-bottom: 80px;
+
+  @include mobile() {
+    font-family: Jost;
+    font-size: 30px;
+    font-weight: 600;
+
+    margin-bottom: 40px;
+    // text-align: center;
+  }
+}
+
+.package__grid {
+  display: flex;
+  gap: 40px;
+
+  @include mobile() {
+    display: grid;
+    gap: 30px;
+
+    justify-content: center;
+  }
+}
+
+.package__grid h1 {
+  font-family: Jost;
+  font-size: 30px;
+  font-weight: 600;
+
+  margin-top: 40px;
+  margin-bottom: 63px;
+
+  @include mobile() {
+    font-family: Jost;
+    font-size: 30px;
+    font-weight: 600;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
+.price {
+  font-family: Jost;
+  font-size: 50px;
+  font-weight: 600;
+
+  @include mobile() {
+    font-family: Jost;
+    font-size: 50px;
+    font-weight: 600;
+
+    margin-bottom: 20px;
+  }
+}
+
+.package__grid p {
+  font-family: Jost;
+  font-size: 18px;
+  font-weight: 400;
+
+  margin-bottom: 61px;
+
+  @include mobile() {
+    font-family: Jost;
+    font-size: 16px;
+    font-weight: 400;
+
+    margin-bottom: 40px;
+  }
+}
+
+.record {
+  width: 280px;
+  height: calc(79 * 100% / 500);
+  background-color: var(--accent);
+
+  margin: 0 40px 40px 40px;
+
+  @include mobile() {
+    width: 260px;
+    height: 60px;
+
+    margin: 0 20px 40px 20px;
+  }
+}
+
+.package__pro,
+.package__robo,
+.package__prog {
+  box-sizing: border-box;
+  border: 1px solid rgba(20, 16, 36, 0.2);
+  border-radius: 20px;
+
+  width: 360px;
+  height: 460px;
+
+  text-align: center;
+
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  transition: height 0.3s ease, margin 0.3s ease;
+
+  @include mobile() {
+    width: 300px;
+    height: 394px;
+  }
+}
+
+.package__pro:hover,
+.package__robo:hover,
+.package__prog:hover {
+  height: 500px;
+  margin-top: -20px; /* Поднятие на половину увеличения высоты */
+  margin-bottom: -20px; /* Опускание на половину увеличения высоты */
+
+  background-color: var(--bg-color);
+  color: var(--text-color);
+
+  @include mobile() {
+    width: 300px;
+    height: 420px;
+  }
+}
